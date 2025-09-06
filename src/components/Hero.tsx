@@ -1,17 +1,17 @@
 import Image from 'next/image';
-import heroBg from '/public/hero-bg.jpg';
 
 export default function Hero() {
   return (
     <header className="relative h-screen flex items-center justify-center text-center overflow-hidden">
       <Image
-        src={heroBg}
+        src="/hero-bg.jpg"
         alt="Abstract technology background"
         layout="fill"
         objectFit="cover"
         className="filter blur-sm"
         placeholder="blur"
         quality={80}
+        priority
       />
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="relative z-10 px-4 sm:px-6 lg:px-8">
