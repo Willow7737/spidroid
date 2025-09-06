@@ -1,15 +1,16 @@
 import Image from 'next/image';
+import heroBg from '@/assets/hero-bg.jpg'; // Import the image
 
 export default function Hero() {
   return (
     <header className="relative h-screen flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="/hero-bg.jpg"
+        src={heroBg} // Use the imported image variable
         alt="Abstract technology background"
         layout="fill"
         objectFit="cover"
         className="filter blur-sm"
-        placeholder="blur"
+        placeholder="blur" // This will now work correctly
         quality={80}
         priority
       />
