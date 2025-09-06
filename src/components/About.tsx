@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import aboutTech from '/public/about-tech.jpg';
 
 export default function About() {
   return (
@@ -12,7 +11,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src={aboutTech}
+              src="/about-tech.jpg"
               alt="Minimalist technology"
               className="rounded-lg shadow-2xl"
               width={800}
